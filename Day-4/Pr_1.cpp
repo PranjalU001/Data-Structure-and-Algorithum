@@ -5,7 +5,7 @@ int main() {
     int arr[6] = {2, 4, 5, 6, 7, 8};
     int target = 2;
     int start = 0;
-    int end = 5; // last index (n-1)
+    int end = 5;
 
     while (start <= end) {
         int mid = (start + end) / 2;
@@ -15,10 +15,10 @@ int main() {
             return 0;
         }
         else if (target > arr[mid]) {
-            start = mid + 1;  // search right side
+            start = mid + 1;
         }
         else {
-            end = mid - 1;    // search left side
+            end = mid - 1;
         }
     }
 
